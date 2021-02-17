@@ -11,7 +11,8 @@ int main()
         N /= 10;
         k = k + 1;
     }
-    while( N /= 10 > 0 );
+    while( N > 0 );
     printf( "Number of digits is: %d",k );
+
     return 0;
 }
