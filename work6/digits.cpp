@@ -1,5 +1,6 @@
 
 int Digits( int N )
+
 {
     int k = 0;
     do
