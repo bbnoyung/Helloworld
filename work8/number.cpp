@@ -16,6 +16,7 @@ int new_number(int number)
         tens *= 10;
         first_number /= 10;
     }
+
     new_number = last_number * tens + middle + first_number;
 
     return new_number;
