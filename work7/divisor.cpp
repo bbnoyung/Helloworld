@@ -10,5 +10,6 @@ int Divisor( int N1, int N2, int N3 )
               del = i;
           }
       }
+
     return del;
 }
