@@ -1,12 +1,14 @@
 //Swap the maximum and last negative elements of the array M (40).
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #include "swap.h"
 
 int main()
 {
     constexpr int SIZE = 40;
+    srand (time(0));
     int arr[SIZE];
 
     printf ( "Enter numbers for array M(40): " );
