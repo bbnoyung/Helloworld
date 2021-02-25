@@ -1,29 +1,29 @@
 //Swap the maximum and last negative elements of the array M (40).
 #include <stdio.h>
+#include <stdlib.h>
+
+#include "swap.h"
 
 int main()
 {
     constexpr int SIZE = 40;
     int arr[SIZE];
-    int max = 0;
-    int min = 0;
-    int tmp;
 
     printf ( "Enter numbers for array M(40): " );
 
     for ( int i = 0; i < SIZE; i++ )
-    scanf( "%d", &arr[i] );
-
-    for ( int i = 0; i < SIZE; i++ )
     {
-        if ( arr[i] < arr [min] ) min = i;
-        if ( arr[i] > arr [max] ) max = i;
+        arr[i] = rand()%100-70;
+        printf("%d ",arr[i]);
     }
 
-    printf("array[min]=%d array[max]=%d\n",arr[min],arr[max]);
-    tmp = arr[min];
-    arr[min] = arr[max];
-    arr[max] = tmp;
+    int neg = negativ( arr, SIZE );
+    int max = maximum( arr, SIZE );
+    printf("\n\n");
+    printf("array[min]=%d array[max]=%d\n",arr[neg],arr[max]);
+
+    printf ("\nResult: ");
+    replace( arr, SIZE );
 
     for ( int i = 0; i < SIZE; i++ )
         printf ( "%d ", arr[i] );
