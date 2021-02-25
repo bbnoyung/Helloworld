@@ -9,6 +9,5 @@ int Decimal (int num)
         N += (num%2) * pow(10.0,i);
         num/=2;
     }
-
     return N;
 }
